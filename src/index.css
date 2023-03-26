@@ -1,0 +1,143 @@
+.grid > button, input[type="submit"], input[type="reset"] {
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.grid {
+    max-width: 1300px;
+    width: 80%;
+    height: auto;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: left;
+    gap: 1em;
+    place-items: center;
+}
+
+
+.bookmarkItemContent {
+    max-height: 300px;
+    text-align: center;
+    padding: 1em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    gap: 1em;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0 1px 1px, rgba(0, 0, 0, 0.07) 0 2px 2px, rgba(0, 0, 0, 0.07) 0 4px 4px, rgba(0, 0, 0, 0.07) 0 8px 8px, rgba(0, 0, 0, 0.07) 0 16px 16px;
+}
+
+.bookmarkItemContent:hover {
+    transform: scale(1.06);
+    box-shadow: #d8c5ba 0 5px 8px;
+}
+
+.bookmarkItemName {
+    font-size: x-large;
+}
+
+.pagination {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    height: 2em;
+    width: 20%;
+}
+
+button {
+    background: #f5ebe0;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 6em;
+    margin: 0 2px;
+    transition: transform 0.2s ease-in;
+}
+
+button:hover {
+    transform: scale(1.06);
+}
+
+html {
+    background: #edede9;
+}
+
+.info {
+    align-self: flex-end;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.details {
+    margin: auto;
+    background: #f5ebe0;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 6em;
+    transition: transform 0.2s ease-in;
+}
+
+html, body {
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.userConnexionButton {
+    font-size: medium;
+    font-weight: bold;
+    margin: 2em auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0 1px 1px, rgba(0, 0, 0, 0.07) 0 2px 2px, rgba(0, 0, 0, 0.07) 0 4px 4px, rgba(0, 0, 0, 0.07) 0 8px 8px, rgba(0, 0, 0, 0.07) 0 16px 16px;
+}
+
+.userConnexionButton:hover {
+    transform: scale(1.02);
+    box-shadow: #d8c5ba 0 5px 8px;
+}
+
+.spinner {
+    height: 50px;
+    width: 100%;
+}
+
+.unstyleA {
+    text-decoration: unset;
+    color: black;
+    background-color: #f5ebe0;
+    border: 1px solid black;
+    width: 270px;
+}
+
+.formCreateBookmark {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formCreateBookmarkInput {
+    width: 100%;
+}
+
+.returnForm {
+    margin-block: 10px;
+    color: inherit;
+    outline: inherit;
+    text-decoration: inherit;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
